@@ -621,8 +621,8 @@ npm run dev
 ## 👥 Authors & Collaborators
 
 - **Nandini** — Project Lead & Ecosystem Developer ([@Nandini090205](https://github.com/Nandini090205))
-- **Naga Rakesh** — AI/ML Architecture & Platform Engineering ([@vankanagarakesh-lab](https://github.com/vankanagarakesh-lab))
-- **Omkar** — Collaborator & Full-Stack Development ([@omkar136](https://github.com/omkar136))
+  
+
 
 - **Project Repository**: [https://github.com/Nandini090205/Gramasetu](https://github.com/Nandini090205/Gramasetu)
 - **License**: Released under the [MIT License](LICENSE).
