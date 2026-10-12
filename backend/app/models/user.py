@@ -17,4 +17,6 @@ class User(Base):
     # Relationships
     profile = relationship("FarmerProfile", back_populates="user", uselist=False, cascade="all, delete-orphan")
     conversations = relationship("Conversation", back_populates="user", cascade="all, delete-orphan")
+    work_listings = relationship("WorkListing", back_populates="user", cascade="all, delete-orphan")
+    women_enterprises = relationship("WomenEnterprise", back_populates="user", cascade="all, delete-orphan")
 

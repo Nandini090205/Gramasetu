@@ -12,8 +12,10 @@ import {
   CheckCircle, 
   AlertCircle,
   Menu,
-  Maximize2
+  Maximize2,
+  LogOut
 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage, normalizeLanguageCode, SupportedLanguage, SUPPORTED_LANGUAGES } from '../context/LanguageContext';
 import { farmerService } from '../services/farmerService';
@@ -27,6 +29,7 @@ export const ProfilePage: React.FC = () => {
   const { onOpenMobileSidebar } = useOutletContext<OutletContextType>();
   const { user, farmerProfile, farmerUuid, updateFarmerProfile, resetDeviceProfile } = useAuth();
   const { currentLanguage, setLanguage, t } = useLanguage();
+  const navigate = useNavigate();
 
   const [name, setName] = useState('');
   const [age, setAge] = useState<string>('');
@@ -38,8 +41,14 @@ export const ProfilePage: React.FC = () => {
   const [currentCropStage, setCurrentCropStage] = useState('');
 
   const [isSaving, setIsSaving] = useState(false);
+  const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  const handleLogout = () => {
+    resetDeviceProfile();
+    navigate('/', { replace: true });
+  };
 
   useEffect(() => {
     if (farmerProfile) {
@@ -131,8 +140,19 @@ export const ProfilePage: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold">
-            🌱 Farm Context Active
+          <div className="flex items-center space-x-2.5 w-full sm:w-auto justify-between sm:justify-end">
+            <div className="px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold">
+              🌱 Farm Context Active
+            </div>
+            <button
+              type="button"
+              onClick={() => setShowLogoutConfirm(true)}
+              className="px-3.5 py-1.5 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:text-rose-300 text-xs font-semibold transition flex items-center space-x-1.5 shadow-sm"
+              title="Logout & Start Fresh as New User"
+            >
+              <LogOut className="w-3.5 h-3.5" />
+              <span>{t('auth.logout', 'Logout / లాగౌట్')}</span>
+            </button>
           </div>
         </div>
 
@@ -317,7 +337,71 @@ export const ProfilePage: React.FC = () => {
             </button>
           </div>
         </form>
+
+        {/* Account & Device Session Card */}
+        <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="space-y-1">
+            <h4 className="text-sm font-bold text-slate-200 flex items-center gap-2">
+              <LogOut className="w-4 h-4 text-rose-400" />
+              Device Session & Switch Farmer / ఖాతా మార్పిడి & లాగౌట్
+            </h4>
+            <p className="text-xs text-slate-400">
+              Logging out will clear this device session and return to the new farmer onboarding registration form.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={() => setShowLogoutConfirm(true)}
+            className="px-4 py-2 bg-rose-500/10 hover:bg-rose-600 hover:text-white border border-rose-500/30 text-rose-400 text-xs font-bold rounded-xl transition flex items-center space-x-2 shadow-lg shrink-0"
+          >
+            <LogOut className="w-4 h-4" />
+            <span>Logout & Register as New Farmer</span>
+          </button>
+        </div>
       </div>
+
+      {/* Logout Confirmation Modal */}
+      {showLogoutConfirm && (
+        <div className="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-50 flex items-center justify-center p-4">
+          <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 max-w-md w-full shadow-2xl space-y-5 animate-in fade-in zoom-in-95 duration-150">
+            <div className="flex items-center space-x-3 text-rose-400">
+              <div className="p-3 rounded-2xl bg-rose-500/10 border border-rose-500/20">
+                <LogOut className="w-6 h-6" />
+              </div>
+              <div>
+                <h3 className="font-bold text-white text-base">
+                  {t('auth.logout_confirm_title', 'Logout & Switch Farmer?')}
+                </h3>
+                <p className="text-xs text-slate-400 mt-0.5">
+                  {t('auth.logout_confirm_sub', 'లాగౌట్ చేసి కొత్త రైతుగా నమోదు కావాలా?')}
+                </p>
+              </div>
+            </div>
+
+            <p className="text-xs text-slate-300 bg-slate-800/60 p-3.5 rounded-2xl border border-slate-700/50 leading-relaxed">
+              {t('auth.logout_warning', 'Logging out will clear your local session on this device. You will be directed to the Farmer Onboarding Form to register fresh details.')}
+            </p>
+
+            <div className="flex items-center justify-end space-x-3 pt-2">
+              <button
+                type="button"
+                onClick={() => setShowLogoutConfirm(false)}
+                className="px-4 py-2 rounded-xl text-xs font-semibold text-slate-300 hover:bg-slate-800 transition"
+              >
+                {t('common.cancel', 'Cancel / రద్దు')}
+              </button>
+              <button
+                type="button"
+                onClick={handleLogout}
+                className="px-5 py-2 rounded-xl text-xs font-bold bg-rose-600 hover:bg-rose-500 text-white transition flex items-center space-x-2 shadow-lg shadow-rose-900/40"
+              >
+                <LogOut className="w-4 h-4" />
+                <span>{t('auth.confirm_logout', 'Confirm Logout / లాగౌట్ చేయండి')}</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

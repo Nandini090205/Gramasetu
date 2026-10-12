@@ -6,9 +6,11 @@ from app.api.voice import router as voice_router
 from app.api.knowledge import router as knowledge_router
 from app.api.simulator import router as simulator_router
 from app.api.translate import router as translate_router
+from app.api.work_listings import router as work_listings_router
+from app.api.women_entrepreneurship import router as women_entrepreneurship_router
 
 __all__ = [
     "auth_router", "farmers_router", "conversations_router",
     "chat_router", "voice_router", "knowledge_router", "simulator_router",
-    "translate_router"
+    "translate_router", "work_listings_router", "women_entrepreneurship_router"
 ]

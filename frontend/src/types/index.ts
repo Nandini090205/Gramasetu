@@ -168,3 +168,169 @@ export interface SimulationAIInsightResponse {
   market_risk_mitigation: string[];
 }
 
+// KRISHI WORK & SERVICE PLATFORM TYPES
+export interface WorkRequest {
+  id: number;
+  listing_id: number;
+  seeker_name: string;
+  seeker_phone: string;
+  message?: string;
+  status: string;
+  created_at: string;
+}
+
+export interface WorkListing {
+  id: number;
+  user_id: number;
+  title: string;
+  description: string;
+  category: string;
+  location: string;
+  payment: string;
+  work_type: string;
+  urgency: string;
+  contact_name: string;
+  contact_phone: string;
+  status: 'published' | 'completed' | string;
+  created_at: string;
+  updated_at: string;
+  request_count?: number;
+  requests?: WorkRequest[];
+}
+
+export interface CreateWorkListingPayload {
+  title: string;
+  description: string;
+  category: string;
+  location: string;
+  payment: string;
+  work_type?: string;
+  urgency?: string;
+  contact_name: string;
+  contact_phone: string;
+  status?: string;
+}
+
+export interface CreateWorkRequestPayload {
+  seeker_name: string;
+  seeker_phone: string;
+  message?: string;
+}
+
+// WOMEN ENTREPRENEURSHIP & SHG PLATFORM TYPES
+export interface WomenEnterpriseInquiry {
+  id: number;
+  enterprise_id: number;
+  buyer_name: string;
+  buyer_phone: string;
+  inquiry_type: string;
+  message?: string;
+  quantity_needed?: string;
+  status: string;
+  created_at: string;
+}
+
+export interface WomenEnterprise {
+  id: number;
+  user_id: number;
+  business_name: string;
+  title: string;
+  category: string;
+  description: string;
+  shg_group_name?: string;
+  products_offered: string;
+  price_range: string;
+  production_capacity: string;
+  location: string;
+  district?: string;
+  contact_name: string;
+  contact_phone: string;
+  government_scheme_availed?: string;
+  certifications?: string;
+  status: 'active' | 'draft' | string;
+  created_at: string;
+  updated_at: string;
+  inquiry_count: number;
+  inquiries?: WomenEnterpriseInquiry[];
+}
+
+export interface CreateWomenEnterprisePayload {
+  business_name: string;
+  title: string;
+  category: string;
+  description: string;
+  shg_group_name?: string;
+  products_offered: string;
+  price_range: string;
+  production_capacity: string;
+  location: string;
+  district?: string;
+  contact_name: string;
+  contact_phone: string;
+  government_scheme_availed?: string;
+  certifications?: string;
+}
+
+export interface CreateWomenEnterpriseInquiryPayload {
+  buyer_name: string;
+  buyer_phone: string;
+  inquiry_type?: string;
+  message?: string;
+  quantity_needed?: string;
+}
+
+export interface GovernmentScheme {
+  id: string;
+  name: string;
+  name_te?: string;
+  tagline: string;
+  category: string;
+  subsidy_grant: string;
+  max_loan_limit: string;
+  eligibility: string[];
+  benefits: string[];
+  documents_needed: string[];
+  how_to_apply: string;
+  portal_url: string;
+  badge?: string;
+}
+
+export interface ViabilityCalculatorRequest {
+  monthly_units_produced: number;
+  selling_price_per_unit: number;
+  raw_material_cost_per_unit: number;
+  packaging_processing_cost_per_unit: number;
+  fixed_monthly_expenses: number;
+  enterprise_type: string;
+}
+
+export interface ViabilityCalculatorResponse {
+  monthly_revenue: number;
+  monthly_variable_costs: number;
+  monthly_fixed_costs: number;
+  monthly_total_costs: number;
+  monthly_net_profit: number;
+  annual_net_profit: number;
+  net_profit_margin_pct: number;
+  breakeven_units_per_month: number;
+  lakhpati_didi_target_pct: number;
+  lakhpati_didi_status: string;
+  insights: string[];
+  recommended_schemes: string[];
+}
+
+export interface SuccessStory {
+  id: number;
+  entrepreneur_name: string;
+  shg_name: string;
+  village: string;
+  district: string;
+  business_domain: string;
+  annual_turnover: string;
+  members_empowered: number;
+  story: string;
+  quote: string;
+  key_achievement: string;
+}
+
+

@@ -11,6 +11,9 @@ import { Loader2 } from 'lucide-react';
 import { LanguageProvider } from './context/LanguageContext';
 import { SimulatorPage } from './pages/SimulatorPage';
 import { AutonomousFarmPage } from './pages/AutonomousFarmPage';
+import { WorkNeedPage } from './pages/WorkNeedPage';
+import { WorkProviderPage } from './pages/WorkProviderPage';
+import { WomenEntrepreneurshipPage } from './pages/WomenEntrepreneurshipPage';
 
 export const AppContent: React.FC = () => {
   const { user, farmerProfile, isLoading } = useAuth();
@@ -29,12 +32,15 @@ export const AppContent: React.FC = () => {
     return <FarmerOnboardingForm />;
   }
 
-  // Otherwise, directly open KRISHI AI main chat interface
+  // Otherwise, directly open KRISHI AI main interface
   return (
     <Routes>
       <Route element={<MainLayout />}>
         <Route path="/" element={<ChatPage />} />
         <Route path="/chat/:conversationId" element={<ChatPage />} />
+        <Route path="/women-entrepreneurship" element={<WomenEntrepreneurshipPage />} />
+        <Route path="/work-need" element={<WorkNeedPage />} />
+        <Route path="/work-provider" element={<WorkProviderPage />} />
         <Route path="/simulator" element={<SimulatorPage />} />
         <Route path="/autonomous-farm" element={<AutonomousFarmPage />} />
         <Route path="/profile" element={<ProfilePage />} />

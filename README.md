@@ -1,10 +1,11 @@
-# 🌾 KRISHI AI — Multilingual AI Farmer Advisory & Farm Future Simulator
+# 🌾 GRAMASETU (గ్రామసేతు / ग्रामसेतु) & KRISHI AI
+### *Unified Rural Community Empowerment, Autonomous Smart Agriculture & Multilingual Intelligence Platform*
 
 <div align="center">
 
 ![Krishi Vision Banner](screenshots/06_krishi_vision_simulator.png)
 
-### **Empowering Smallholder Farmers with Predictive Agronomic Simulations, AI Plant Disease Detection with Image or Camera, and Multilingual Indian Language Intelligence**
+### **Bridging Rural India: Predictive Agronomic Simulations, AI Plant Pathology, IoT Autonomous Irrigation Twin, Rural Work Exchange, and Women Entrepreneurship (SHG) Hub**
 
 ---
 
@@ -18,44 +19,47 @@
 [![SQLite / SQL](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-[🌟 Executive Summary](#-executive-summary--judge-evaluation-sheet) • [📸 Output Visual Showcase](#-output--visual-showcase) • [🌾 Intelligent Autonomous Farm](#-deep-dive-krishi-ai-future-intelligent-autonomous-farm) • [🔮 KRISHI VISION Simulator](#-deep-dive-krishi-vision-farm-future-simulator) • [🔬 AI Plant Disease Detection](#-ai-plant-disease-detection-with-image-or-camera) • [🗣️ Multilingual Voice AI](#-multilingual-voice--generative-ai-rag) • [🏛️ Architecture & Pipelines](#️-system-architecture--data-pipelines) • [💻 Technical Languages & Stack](#-technical-programming-languages--technology-stack) • [📐 Math Models](#-mathematical--agronomic-formulations) • [📡 API Reference](#-rest-api-documentation) • [🚀 Quick Start](#-quick-start--installation-guide)
+**GitHub Repository**: [https://github.com/Nandini090205/Gramasetu](https://github.com/Nandini090205/Gramasetu)
+
+[🌟 Executive Summary](#-executive-summary--vision) • [🏛️ 6 Core Pillars](#-the-six-core-pillars-of-gramasetu) • [📸 Visual Showcase](#-output--visual-showcase) • [🌾 Autonomous Farm Twin](#-pillar-1-krishi-ai-autonomous-farm-twin--smart-irrigation) • [🔮 KRISHI VISION Simulator](#-pillar-2-krishi-vision-farm-future-scenario-simulator) • [🔬 Plant Disease Detection](#-pillar-3-edge-computer-vision-plant-disease-detection) • [🤝 Rural Work Exchange](#-pillar-4-gramasetu-rural-work-exchange) • [👩‍🌾 Women Entrepreneurship](#-pillar-5-gramasetu-women-entrepreneurship--shg-hub) • [🗣️ Multilingual Voice AI](#-pillar-6-multilingual-voice-intelligence--rag) • [📐 Math Models](#-mathematical--agronomic-formulations) • [🏛️ System Architecture](#️-system-architecture--technical-stack) • [📡 API Reference](#-complete-rest-api-documentation) • [🚀 Quick Start](#-quick-start--installation-guide)
 
 </div>
 
 ---
 
-## 🏆 Executive Summary & Judge Evaluation Sheet
+## 🌟 Executive Summary & Vision
 
-Smallholder farmers in India confront high volatility due to climate unpredictability, volatile mandi commodity rates, and localized pest infestations. Most existing agricultural apps are simple lookup databases or text bots that require high literacy and provide static information.
+In rural India, smallholder farmers and village communities face a complex web of interconnected challenges:
+1. **Agronomic Volatility**: Erratic monsoons, groundwater depletion, unpredictable market prices, and sudden pest or disease outbreaks lead to high financial vulnerability.
+2. **Rural Labor & Machinery Bottlenecks**: Finding timely farm labor during peak harvesting, renting tractors or sprayers, or connecting with local rural artisans (carpenters, tailors, transport operators) is fragmented and reliant on word-of-mouth.
+3. **Underutilized Women Enterprises & SHGs**: Self-Help Groups (SHGs) and rural women entrepreneurs producing high-quality cold-pressed oils, organic vermicompost, millets, and drone spraying services struggle for direct market access, enterprise viability modeling, and government scheme discovery.
+4. **Language & Digital Literacy Divide**: Most modern apps are built in English or formal text, alienating farmers who require native spoken voice interaction in Telugu, Hindi, Kannada, Tamil, or Marathi.
 
-**KRISHI AI** is a complete decision-support & autonomous platform built around four key innovations:
+**GRAMASETU (గ్రామసేతు - The Village Bridge)** powered by **KRISHI AI** is a comprehensive, end-to-end digital ecosystem built to solve these multi-dimensional challenges through six foundational pillars.
+
+---
+
+## 🏛️ The Six Core Pillars of Gramasetu
 
 ```
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                           KRISHI AI PILLARS                                            │
-├──────────────────────────┬──────────────────────────┬──────────────────────────┬───────────────────────┤
-│ 1. AUTONOMOUS FARM TWIN  │ 2. KRISHI VISION SIM     │ 3. EDGE COMPUTER VISION  │ 4. MULTILINGUAL VOICE │
-│ AI + IoT Smart           │ Real-time "What-If"      │ MobileNetV2 diagnosing   │ Native speech &       │
-│ Irrigation telemetry,    │ Agronomic, Financial,    │ 38 leaf disease classes  │ multi-script LLM with │
-│ rain radar & pump relays │ & Climate Simulator      │ with organic cures       │ verifiable citations  │
-└──────────────────────────┴──────────────────────────┴──────────────────────────┴───────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                       GRAMASETU & KRISHI AI ECOSYSTEM                                            │
+├──────────────────────┬──────────────────────┬──────────────────────┬──────────────────────┬─────────────────────┤
+│ 1. AUTONOMOUS FARM   │ 2. KRISHI VISION     │ 3. COMPUTER VISION   │ 4. RURAL WORK        │ 5. WOMEN SHG HUB    │
+│ AI + IoT closed-loop │ "What-If" climate,   │ MobileNetV2 leaf     │ Farm labor, tractor, │ Value-added goods,  │
+│ smart irrigation     │ market & budget      │ pathology detection  │ carpentry, tailoring │ drone services,     │
+│ twin with rain radar │ multi-crop simulator │ via camera (< 120ms) │ & transport exchange │ viability & schemes │
+├──────────────────────┴──────────────────────┴──────────────────────┴──────────────────────┴─────────────────────┤
+│                           6. MULTILINGUAL VOICE & GENERATIVE AGRONOMIC AI (RAG)                                  │
+│                 Native Indian language voice STT/TTS, ICAR agronomy retrieval & full UI translation             │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
-
-### 🎯 Quick Evaluation Matrix for Judges
-
-| Evaluation Dimension | Traditional Agricultural Solutions | KRISHI AI Advisory & Simulator |
-| :--- | :--- | :--- |
-| **Risk Management** | Reactive (recommends cures after damage occurs) | **Predictive (simulates drought, price crashes, & monsoon delays before sowing)** |
-| **User Accessibility** | Text-heavy English/Hindi UI | **Voice STT/TTS with 10+ Indian language scripts & regional dialects** |
-| **Diagnostic Speed** | Remote human consultation (24–72 hours) | **On-device/Edge MobileNetV2 Deep Learning inference (< 120ms)** |
-| **Financial Intelligence**| Generic yield numbers per hectare | **Dynamic P&L, ROI %, Cultivation Cost breakdown, and MSP sensitivity** |
-| **Agronomic Accuracy** | Unverified generative LLM hallucinations | **Curated Agronomic Knowledge Base + Vector RAG + Evapotranspiration models** |
 
 ---
 
 ## 📸 Output & Visual Showcase
 
-### 1. 🔮 Flagship Innovation — KRISHI VISION (AI Farm Future Simulator)
+### 1. 🔮 Flagship Simulator — KRISHI VISION (AI Farm Future Simulator)
 *Interactive "What-If" climate, market, and budget scenario simulator comparing multi-crop yield, ROI, water consumption, and AI viability scores.*
 
 ![Krishi Vision Simulator Output](screenshots/06_krishi_vision_simulator.png)
@@ -144,17 +148,13 @@ Smallholder farmers in India confront high volatility due to climate unpredictab
 
 ![Live AI Demo Engine & Scenarios](screenshots/10_live_ai_demo_engine_and_scenarios.png)
 
-> **Key Output Elements Highlighted:**
-> - **▶ Start Live AI Demo**: One-click automated 7-step sequence walking through sensor ingestion, profile matching, weather check, radar scan, AI neural decision, motor actuation, and farmer alert delivery.
-> - **4 Instant Simulation Scenarios**: *Scenario 1: Normal Moisture (55%)*, *Scenario 2: Low Moisture — Dry (22%)*, *Scenario 3: Low Moisture + Rain in 3h (24%)*, *Scenario 4: Optimal / Saturated (82%)*.
-
 ---
 
-## 🌾🤖💧 Deep Dive: KRISHI AI Future (Intelligent Autonomous Farm)
+## 🌾 Pillar 1: KRISHI AI Autonomous Farm Twin & Smart Irrigation
 
 Traditional agriculture relies on manual guess-based borewell pumping, causing catastrophic groundwater depletion or root suffocation during unpredicted rainfall.
 
-**KRISHI AI Future: Intelligent Autonomous Farm** elevates KRISHI AI from a conversational advisor into an **autonomous edge-AI farm management platform**. It simulates a closed-loop AI + IoT smart irrigation ecosystem that makes decisions using live crop root sensors, microclimate evapotranspiration, and satellite rain radar.
+**KRISHI AI Autonomous Farm Twin** models an active closed-loop AI + IoT smart irrigation ecosystem that makes decisions using live crop root sensors, microclimate evapotranspiration, and satellite rain radar.
 
 ```
                      COMPLETE AUTONOMOUS IRRIGATION FLOW
@@ -190,25 +190,7 @@ Traditional agriculture relies on manual guess-based borewell pumping, causing c
 
 ### 🧠 The 4 Core Autonomous AI Decision Rules
 
-The decision engine evaluates the continuous root-zone soil moisture ($M_{\text{soil}}$), upcoming rainfall forecast arrival ($T_{\text{rain}}$), and precipitation probability ($P_{\text{rain}}$):
-
-```
-                                    AI DECISION LOGIC TREE
-                                               │
-                                               ▼
-                             Is Soil Moisture M_soil < 35%?
-                                    /               \
-                                 YES                 NO
-                                 /                     \
-                   Is Rain Forecasted Soon?             Is M_soil > 75%?
-                  (T_rain ≤ 5h & P_rain ≥ 50%)          /              \
-                         /           \                YES               NO
-                       YES            NO               │                 │
-                        │              │               ▼                 ▼
-                        ▼              ▼           [ RULE 4 ]        [ RULE 3 ]
-                   [ RULE 2 ]     [ RULE 1 ]     EXCESS MOISTURE   OPTIMAL MOISTURE
-                   DELAY RAIN      MOTOR ON       MOTOR LOCKED OFF    MOTOR OFF
-```
+The decision engine evaluates continuous root-zone soil moisture ($M_{\text{soil}}$), upcoming rainfall arrival time ($T_{\text{rain}}$), and precipitation probability ($P_{\text{rain}}$):
 
 | Decision Rule | Trigger Conditions | Motor Output | AI Reasoning & Agronomic Action |
 | :--- | :--- | :---: | :--- |
@@ -217,11 +199,9 @@ The decision engine evaluates the continuous root-zone soil moisture ($M_{\text{
 | **Rule 3: Optimal Hydration** | $35\% \le M_{\text{soil}} \le 75\%$ | **🔴 MOTOR OFF** *(Standby)* | *“✅ Optimal root-zone hydration maintained (55%). Evapotranspiration balanced. Irrigation motor safely shut down.”* |
 | **Rule 4: Excess Moisture Warning** | $M_{\text{soil}} > 75\%$ | **🔴 MOTOR OFF** *(Safeguard)* | *“⚠️ Excess water detected (82%). Motor locked OFF to protect roots from fungal infection, root rot, and fertilizer leaching.”* |
 
----
-
 ### 🚀 Automated 7-Step Hackathon Live AI Demo Runner
-The dashboard features a **`▶ Start Live AI Demo`** button engineered for live hackathon jury presentations:
-1. **Step 1: Reading soil sensor...** ➔ RS485 capacitive probe streams real-time moisture (`22%`) and root temperature (`29°C`).
+The dashboard features a **`▶ Start Live AI Demo`** button engineered for live demonstrations:
+1. **Step 1: Reading soil sensor...** ➔ RS485 capacitive probe streams moisture (`22%`) and root temp (`29°C`).
 2. **Step 2: Checking farmer profile...** ➔ Pulls crop classification (*Rice/Tomato*), soil type (*Black Clay*), and growth stage (*Nursery*).
 3. **Step 3: Checking weather conditions...** ➔ Evaluates ambient microclimate (`35°C`, `42% RH`) and evaporation index.
 4. **Step 4: Checking rain prediction...** ➔ Scans Open-Meteo satellite radar for precipitation probability.
@@ -231,25 +211,7 @@ The dashboard features a **`▶ Start Live AI Demo`** button engineered for live
 
 ---
 
-### ⚙️ Production-Ready Future Real Hardware Topology
-
-```
-┌───────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                  HARDWARE INTEGRATION ARCHITECTURE                                    │
-├─────────────────────────┬─────────────────────────┬─────────────────────────┬─────────────────────────┤
-│ 1. Capacitive Probe     │ 2. ESP32 Controller     │ 3. 5V Relay Switch      │ 4. Submersible Pump     │
-│ • Industrial RS485      │ • Tensilica 240MHz      │ • 10A Optocoupler       │ • 1.5 HP - 5 HP 3-Phase │
-│ • 15cm Root Placement   │ • LoRaWAN 868/915 MHz   │ • Flyback Diode Safety  │ • Flow: 42-200 L/min    │
-│ • Analog 0-3.3V GPIO34  │ • MQTT over TLS 1.3     │ • Signal GPIO26 Out     │ • Drip & Sprinkler Grid │
-└─────────────────────────┴─────────────────────────┴─────────────────────────┴─────────────────────────┘
-```
-
-> **📌 Hackathon Demonstration Note:**
-> *Current version is a high-fidelity software twin and simulation designed for hackathon demonstration. The architecture is engineered for direct plug-and-play integration with physical ESP32 microcontrollers, solid-state relays, and industrial water pumps.*
-
----
-
-## 🔮 Deep Dive: KRISHI VISION (Farm Future Simulator)
+## 🔮 Pillar 2: KRISHI VISION (Farm Future Scenario Simulator)
 
 Smallholder farmers frequently lose their entire seasonal capital when monsoon rains arrive 30 days late or market prices crash at harvest. **KRISHI VISION** solves this problem by providing a real-time parametric simulation engine.
 
@@ -269,7 +231,7 @@ Smallholder farmers frequently lose their entire seasonal capital when monsoon r
          │                                 │                                 │
          └─────────────────────────────────┼─────────────────────────────────┘
                                            ▼
-                               MULTI-CROP OUTCOME MATRIX
+                                MULTI-CROP OUTCOME MATRIX
                                            │
    ┌───────────────────────┬───────────────┴───────────────┬───────────────────────┐
    ▼                       ▼                               ▼                       ▼
@@ -277,7 +239,7 @@ Net Profit (₹)          ROI (%)                     Water Stress Index        
 ```
 
 ### 🎛️ Simulation Parameters & Sliders
-1. **Available Water Level ($W_{\text{avail}} \in [0\%, 100\%]$)**: Models severe drought conditions ($0\%$), limited borewell/canal water ($50\%$), or unrestricted irrigation ($100\%$).
+1. **Available Water Level ($W_{\text{avail}} \in [0\%, 100\%]$)**: Models severe drought ($0\%$), limited borewell/canal water ($50\%$), or unrestricted irrigation ($100\%$).
 2. **Rain Delay / Monsoon Lag ($D_{\text{rain}} \in [0, 60\text{ days}]$)**: Simulates delayed sowing windows, reducing vegetative growth duration and grain-filling periods.
 3. **Temperature Delta ($\Delta T \in [-5^{\circ}\text{C}, +5^{\circ}\text{C}]$)**: Evaluates thermal stress thresholds, pollen sterility, and high transpiration rates.
 4. **Market Price Shift ($\Delta P \in [-50\%, +50\%]$)**: Simulates bumper harvest market gluts, MSP procurement guarantees, or supply shortages.
@@ -285,42 +247,7 @@ Net Profit (₹)          ROI (%)                     Water Stress Index        
 
 ---
 
-## 📐 Mathematical & Agronomic Formulations
-
-### 1. Water Stress & Evapotranspiration Modeling
-Crop water demand is determined using the FAO-56 Penman-Monteith methodology:
-$$ET_c = K_c \times ET_0$$
-Where:
-- $ET_c$: Crop evapotranspiration requirement (mm)
-- $K_c$: Crop coefficient across vegetative/flowering stages
-- $ET_0$: Reference evapotranspiration derived from live weather telemetry
-
-The **Water Deficit Attenuation Factor ($K_s$)** is calculated as:
-$$K_s = \max\left(0.1, \min\left(1.0, \frac{W_{\text{avail}} \times \text{Rainfall}_{\text{expected}}}{ET_c}\right)\right)$$
-
-### 2. Yield Reduction Equation (FAO Stewart Model)
-The adjusted harvest yield per acre ($Y_{\text{actual}}$) is computed as:
-$$Y_{\text{actual}} = Y_{\text{base}} \times \left[ 1 - K_y \times (1 - K_s) \right] \times \left(1 - \frac{D_{\text{rain}}}{120}\right) \times \text{ThermalPenalty}(\Delta T)$$
-Where:
-- $Y_{\text{base}}$: Baseline yield potential (Quintals/Acre) under optimal management
-- $K_y$: Yield response factor specific to crop vulnerability (e.g., $1.2$ for Paddy, $0.7$ for Millets)
-- $D_{\text{rain}}$: Delay in sowing window (Days)
-- $\text{ThermalPenalty}(\Delta T) = 1 - 0.03 \times \max(0, \Delta T - 2.0)$
-
-### 3. Financial & Return on Investment (ROI) Formulations
-$$\text{Total Cultivation Cost } (C_{\text{total}}) = \text{CostPerAcre} \times A_{\text{acres}}$$
-$$\text{Gross Revenue } (R_{\text{total}}) = Y_{\text{actual}} \times A_{\text{acres}} \times \left[\text{MSP} \times \left(1 + \frac{\Delta P}{100}\right)\right]$$
-$$\text{Net Profit } (\Pi_{\text{net}}) = R_{\text{total}} - C_{\text{total}}$$
-$$\text{Return on Investment } (\text{ROI}) = \left(\frac{\Pi_{\text{net}}}{C_{\text{total}}}\right) \times 100$$
-
-### 4. Composite AI Viability Score (0 to 100)
-Every crop is evaluated using a normalized multi-objective loss function:
-$$\text{Score}_{\text{AI}} = w_1 \cdot \widehat{\Pi}_{\text{profit}} + w_2 \cdot \widehat{K}_s + w_3 \cdot \widehat{S}_{\text{soil}} + w_4 \cdot (100 - \text{RiskPenalty})$$
-*(Weights calibrated to: $w_1 = 0.40$, $w_2 = 0.25$, $w_3 = 0.20$, $w_4 = 0.15$)*
-
----
-
-## 🔬 AI Plant Disease Detection with Image or Camera
+## 🔬 Pillar 3: Edge Computer Vision (Plant Disease Detection)
 
 ```
   ┌───────────────────────────────┐
@@ -347,212 +274,294 @@ $$\text{Score}_{\text{AI}} = w_1 \cdot \widehat{\Pi}_{\text{profit}} + w_2 \cdot
    • Preventative Agronomic Care
 ```
 
-- **Live Camera & Image Ingestion**: Farmers can either take an instant real-time photo of an infected leaf using their smartphone/laptop camera or upload high-resolution photos from their file gallery.
-- **Deep Learning Neural Architecture**: PyTorch `MobileNetV2` featuring inverted residual blocks with depthwise separable convolutions for ultra-fast, lightweight mobile and edge inference (< 120ms).
-- **Dataset & Classes**: Pretrained on **54,305 curated leaf images** across **38 plant disease classes** from the PlantVillage agricultural corpus.
+- **Live Camera & Image Ingestion**: Farmers can take a real-time photo of an infected leaf using device camera (`navigator.mediaDevices.getUserMedia`) or upload from gallery.
+- **Deep Learning Architecture**: PyTorch `MobileNetV2` featuring inverted residual blocks with depthwise separable convolutions for fast, lightweight edge inference (< 120ms).
+- **Curated Dataset & Classes**: Pretrained on **54,305 curated leaf images** across **38 plant disease classes** from the PlantVillage corpus.
 - **Supported Crops**: Tomato, Potato, Corn (Maize), Bell Pepper / Chilli, Apple, Grape, Citrus, Strawberry, Peach, Cherry, Soybean, Blueberry, Squash.
-- **Quality & Rejection Guardrails**: Automatic OpenCV/PIL validation detecting blurry photos ($\text{Laplacian variance } \sigma^2 < 100$), bad lighting, corrupt files, or non-plant subjects with prompt guidance to retake clear leaf photos.
+- **Quality Guardrails**: Automatic OpenCV/PIL validation detecting blurry photos ($\text{Laplacian variance } \sigma^2 < 100$), bad lighting, corrupt files, or non-plant subjects.
 
 ---
 
-## 🗣️ Multilingual Voice & Generative AI (RAG)
+## 🤝 Pillar 4: Gramasetu Rural Work Exchange
+
+The **Gramasetu Rural Work Exchange** bridges the gap between farmers needing skilled agricultural assistance and local workers, artisans, and machinery owners seeking dependable rural employment.
+
+### 👥 Two Unified Interfaces
+1. **Work Provider Portal (`/work-provider`)**: Farmers and farm managers post labor requirements, machinery requests, or rural services with compensation rates, location, date, and urgency.
+2. **Work Seeker / Work Need Portal (`/work-need`)**: Laborers, operators, and artisans browse active village listings, filter by job category, view wage rates, and apply with a single tap.
+
+### 🚜 Supported Work Categories
+- **Paddy Harvesting & Threshing** (వరి కోత & నూర్పిడి కూలీలు)
+- **Cotton Picking Workers** (పత్తి ఏరడం)
+- **Tractor & Machinery Rental / Operators** (రోటవేటర్, దుక్కి ట్రాక్టర్)
+- **Weeding & Intercultural Operations** (కలుపు తీత పనులు)
+- **Spraying Services** (మిర్చి & పత్తిలో మందు పిచికారీ)
+- **Farm Carpentry** (వడ్రంగి పని - Wooden cattle shed, bullock carts, tool handles)
+- **Farm Tailoring** (కుట్టుపని - Crop tarpaulin repair, shade nets, gunny bag stitching)
+- **Delivery & Rural Transportation** (వ్యవసాయ సరుకు రవాణా - Farm gate to mandi pickup)
+- **Cattle & Dairy Care** (పాడి పశువుల సంరక్షణ)
+
+### ⚡ Key Features
+- **Direct Phone & Application Linkage**: Seeker submits name, contact, and note; provider receives applications instantly and updates listing status (`published`, `in_progress`, `completed`).
+- **Pre-Seeded Real-World Regional Data**: Includes real-world listings across Andhra Pradesh & Telangana districts (Guntur, Krishna, Nalgonda, Khammam, Warangal, Bapatla).
+
+---
+
+## 👩‍🌾 Pillar 5: Gramasetu Women Entrepreneurship & SHG Hub
+
+Empowering rural women is central to resilient village economies. The **Gramasetu Women Entrepreneurship & SHG Hub (`/women-entrepreneurship`)** provides a dedicated showcase, business calculator, and scheme linkage for Self-Help Groups (DWCRA / Mahila Mandalis) and women-led micro-enterprises.
+
+### 🌟 Enterprise Categories
+- **Traditional Cold-Pressed Oils & Value Addition** (భవానీ గానుగ నూనెలు - Wooden cold-pressed groundnut, sesame, safflower oils)
+- **Bio-Enriched Vermicompost & Jeevamrutham** (అన్నపూర్ణ వర్మీకంపోస్ట్ - Earthworm-cast vermicompost, Jeevamrutham, Neemastra)
+- **Drone & Agri-Tech Services** (ప్రగతి కిసాన్ డ్రోన్ స్ప్రేయింగ్ - DGCA-certified woman drone pilots for precision aerial spraying)
+- **Millets & Spices Processing** (చిరుధాన్యాల పిండి & సహజ మసాలాలు)
+- **Dairy & Livestock Products** (నెయ్యి, పనీర్, దేశీ ఆవు ఉత్పత్తులు)
+- **Handicrafts, Jute & Eco-Packaging** (జనపనార సంచులు, చేతివృత్తులు)
+
+### 📊 Built-In Rural Business Viability Calculator
+Enables SHGs and entrepreneurs to compute their business numbers in seconds:
+$$\text{Gross Monthly Profit } (\Pi) = \text{Monthly Revenue} - \text{Raw Material Costs} - \text{Labor Costs} - \text{Operational Overhead}$$
+$$\text{Profit Margin } (\%) = \left(\frac{\Pi}{\text{Monthly Revenue}}\right) \times 100$$
+$$\text{Payback Period } (\text{Months}) = \frac{\text{Initial Capital Investment}}{\Pi}$$
+
+### 🏛️ Government Schemes & Credit Linkage Catalog
+Direct guidance and eligibility criteria for key central & state empowerment schemes:
+- **Namo Drone Didi Scheme**: 80% capital subsidy (up to ₹8 Lakhs) + DGCA drone pilot training.
+- **PM-FME (PM Formalisation of Micro food processing Enterprises)**: 35% credit-linked capital subsidy up to ₹10 Lakhs.
+- **DAY-NRLM & DWCRA Pavala Vaddi**: Low-interest bank linkage and Community Investment Funds.
+- **Mudra Yojana (Shishu, Kishore, Tarun)**: Collateral-free loans up to ₹10 Lakhs.
+- **Lakhpati Didi Benchmark**: Structured guidance to reach ₹1,00,000+ annual household income per woman member.
+
+### 🛒 Buyer Inquiry & Direct Distribution System
+Customers, FPOs, and bulk buyers can submit purchase orders and distribution inquiries directly to the SHG leadership through the platform.
+
+---
+
+## 🗣️ Pillar 6: Multilingual Voice Intelligence & RAG
 
 ```
  Farmer Voice Input ──► Web Speech / Whisper STT ──► Auto-Script Language Detection
-                                                              │
+                                                               │
  Agricultural Advisory ◄── Multilingual Neural TTS ◄── LLM Response + RAG Grounding
  (Audio in Telugu/Hindi)   (gTTS / Voice Synthesis)    (Curated Agronomy Vector Store)
 ```
 
 1. **Auto-Script Language Detection**: Regex token classifier recognizing 10 Indian scripts without latency overhead.
 2. **Agricultural RAG Pipeline**: Local vector embeddings indexed against curated Indian Council of Agricultural Research (ICAR) practices, integrated pest management (IPM) guidelines, and regional sowing calendars.
-3. **Voice In / Voice Out**: Speech-to-Text conversion paired with audio synthesis in Telugu (`te`), Hindi (`hi`), and English (`en`).
+3. **Voice In / Voice Out**: Speech-to-Text conversion paired with audio synthesis in Telugu (`te`), Hindi (`hi`), Kannada (`kn`), Tamil (`ta`), Marathi (`mr`), and English (`en`).
+4. **Full UI Real-Time Translation**: Synchronized language switching translating chats, navigation, weather, and interactive simulator cards across all supported Indian languages.
 
 ---
 
-## 🏛️ System Architecture & Data Pipelines
+## 📐 Mathematical & Agronomic Formulations
 
-```
-                                      🌾 FARMER CLIENT
-               (React 18 + TypeScript + Tailwind CSS + Lucide + Web Audio API)
-                                              │
-                     ┌────────────────────────┼────────────────────────┐
-                     ▼                        ▼                        ▼
-           [ KRISHI VISION UI ]     [ Leaf Camera Scan ]      [ Voice / Text Chat ]
-                     │                        │                        │
-                     └────────────────────────┼────────────────────────┘
-                                              ▼
-                                 FASTAPI GATEWAY & ROUTER
-                                              │
-        ┌───────────────────┬─────────────────┼───────────────────┬───────────────────┐
-        ▼                   ▼                 ▼                   ▼                   ▼
-[ /api/simulator ]   [ /api/chat ]    [ /api/voice ]      [ /api/farmer ]     [ /api/health ]
-  • Multi-crop Sim    • RAG Chat       • Whisper STT       • Crop Context      • System Status
-  • AI Insights       • Leaf Pathology • Neural TTS        • Soil Profile      • Model Metrics
-        │                   │                 │                   │                   │
-        ▼                   ▼                 ▼                   ▼                   ▼
-┌───────────────┐   ┌───────────────┐ ┌───────────────┐   ┌───────────────┐   ┌───────────────┐
-│ Agronomic     │   │ PyTorch       │ │ gTTS / Voice  │   │ SQLite /      │   │ Open-Meteo    │
-│ Simulation    │   │ MobileNetV2   │ │ Audio Engine  │   │ SQLAlchemy    │   │ Live Weather  │
-│ Engine        │   │ Classifier    │ │               │   │ Persistence   │   │ & Geocoding   │
-└───────────────┘   └───────────────┘ └───────────────┘   └───────────────┘   └───────────────┘
-```
+### 1. Water Stress & Evapotranspiration Modeling
+Crop water demand is determined using the FAO-56 Penman-Monteith methodology:
+$$ET_c = K_c \times ET_0$$
+Where $ET_c$ is crop evapotranspiration requirement (mm), $K_c$ is crop stage coefficient, and $ET_0$ is reference evapotranspiration derived from live weather telemetry.
+
+The **Water Deficit Attenuation Factor ($K_s$)** is:
+$$K_s = \max\left(0.1, \min\left(1.0, \frac{W_{\text{avail}} \times \text{Rainfall}_{\text{expected}}}{ET_c}\right)\right)$$
+
+### 2. Yield Reduction Equation (FAO Stewart Model)
+$$Y_{\text{actual}} = Y_{\text{base}} \times \left[ 1 - K_y \times (1 - K_s) \right] \times \left(1 - \frac{D_{\text{rain}}}{120}\right) \times \text{ThermalPenalty}(\Delta T)$$
+Where $Y_{\text{base}}$ is baseline yield (Quintals/Acre), $K_y$ is yield response factor (e.g. $1.2$ for Paddy, $0.7$ for Millets), $D_{\text{rain}}$ is delay in sowing days, and $\text{ThermalPenalty}(\Delta T) = 1 - 0.03 \times \max(0, \Delta T - 2.0)$.
+
+### 3. Financial & Return on Investment (ROI) Formulations
+$$C_{\text{total}} = \text{CostPerAcre} \times A_{\text{acres}}$$
+$$R_{\text{total}} = Y_{\text{actual}} \times A_{\text{acres}} \times \left[\text{MSP} \times \left(1 + \frac{\Delta P}{100}\right)\right]$$
+$$\Pi_{\text{net}} = R_{\text{total}} - C_{\text{total}}$$
+$$\text{ROI } (\%) = \left(\frac{\Pi_{\text{net}}}{C_{\text{total}}}\right) \times 100$$
+
+### 4. Composite AI Viability Score (0 to 100)
+$$\text{Score}_{\text{AI}} = w_1 \cdot \widehat{\Pi}_{\text{profit}} + w_2 \cdot \widehat{K}_s + w_3 \cdot \widehat{S}_{\text{soil}} + w_4 \cdot (100 - \text{RiskPenalty})$$
+*(Calibrated weights: $w_1 = 0.40$, $w_2 = 0.25$, $w_3 = 0.20$, $w_4 = 0.15$)*
 
 ---
 
-## 💻 Technical Programming Languages & Technology Stack
+## 🏛️ System Architecture & Technical Stack
 
-KRISHI AI is engineered using a robust polyglot architecture combining high-performance typed programming languages, deep learning frameworks, and localized Indian natural language processing engines:
+```
+                                  🌾 GRAMASETU CLIENT
+            (React 18 + Vite + TypeScript + Tailwind CSS + Lucide + Web Audio API)
+                                           │
+   ┌───────────────────┬───────────────────┼───────────────────┬───────────────────┐
+   ▼                   ▼                   ▼                   ▼                   ▼
+[ KRISHI VISION ]   [ Autonomous Farm ] [ Leaf Camera ]     [ Rural Work ]      [ Women SHG Hub ]
+   │                   │                   │                   │                   │
+   └───────────────────┴───────────────────┼───────────────────┴───────────────────┘
+                                           ▼
+                                FASTAPI BACKEND GATEWAY
+                                           │
+  ┌──────────────┬──────────────┬──────────┴───┬──────────────┬──────────────┬──────────────┐
+  ▼              ▼              ▼              ▼              ▼              ▼              ▼
+/simulator      /autonomous    /chat          /voice         /work-listings /women-ent     /farmer
+Multi-crop      Closed-loop    RAG Chat &     Whisper STT    Labor, tractor Enterprise     Profile, soil
+simulation      relay actuator Leaf pathology TTS playback   matching       hub & schemes  & geocoding
+  │              │              │              │              │              │              │
+  ▼              ▼              ▼              ▼              ▼              ▼              ▼
+┌──────────────┐ ┌────────────┐ ┌────────────┐ ┌────────────┐ ┌────────────┐ ┌────────────┐ ┌────────────┐
+│ Agronomic    │ │ Decision   │ │ PyTorch    │ │ gTTS /     │ │ Work &     │ │ SHG Catalog│ │ SQLite &   │
+│ Sim Engine   │ │ Rules      │ │ MobileNet  │ │ Speech API │ │ Request DB │ │ & Fin Calc │ │ SQLAlchemy │
+└──────────────┘ └────────────┘ └────────────┘ └────────────┘ └────────────┘ └────────────┘ └────────────┘
+```
 
-### 🛠️ Programming & Technical Languages
-| Language | Version / Standard | Application Area | Key Capabilities & Role in KRISHI AI |
-| :--- | :--- | :--- | :--- |
-| **Python** | `3.10+` | Backend & Machine Learning | FastAPI gateway, PyTorch MobileNetV2 leaf pathology classification, agronomic math models, RAG vector embeddings, and speech processing. |
-| **TypeScript** | `5.x` | Frontend Application | 100% type-safe React UI, predictive simulation telemetry interfaces, state synchronization, and strict API schemas. |
-| **JavaScript** | `ES2022+ / Node.js` | Frontend Runtime & Tooling | Vite build pipelines, asynchronous client networking, and Web Audio API streaming. |
-| **HTML5** | Modern Semantic Standard | Layout & Device APIs | Semantic document structure, device camera stream capture (`navigator.mediaDevices`), and Web Audio API contexts. |
-| **CSS3** | Modern Specification | Styling & Animations | Responsive dark-mode aesthetics, custom glassmorphism design tokens, micro-animations, and fluid transitions. |
-| **SQL** | SQLite / SQLAlchemy Dialect | Database & Persistence | Relational database schema definitions, conversation message indexing, and farmer profile records. |
-| **Shell / Bash / PowerShell** | Unix / POSIX / Windows | Tooling & Scripts | Automated environment orchestration, virtualenv lifecycle, and npm/pip deployment workflows. |
-
-### 🗣️ Supported Spoken & Natural Indian Languages
-| Natural Language | Script | UI Localization | Voice STT | Neural TTS | Agronomic Advisory |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| **Telugu (తెలుగు)** | Telugu Script (`te-IN`) | ✅ Full | ✅ Active | ✅ Active | ✅ Full Native |
-| **Hindi (हिंदी)** | Devanagari (`hi-IN`) | ✅ Full | ✅ Active | ✅ Active | ✅ Full Native |
-| **Kannada (ಕನ್ನಡ)** | Kannada Script (`kn-IN`) | ✅ Full | ✅ Active | ✅ Active | ✅ Full Native |
-| **Tamil (தமிழ்)** | Tamil Script (`ta-IN`) | ✅ Full | ✅ Active | ✅ Active | ✅ Full Native |
-| **Marathi (मराठी)** | Devanagari (`mr-IN`) | ✅ Full | ✅ Active | ✅ Active | ✅ Full Native |
-| **English** | Latin Script (`en-IN`) | ✅ Full | ✅ Active | ✅ Active | ✅ Full Native |
-
-### 📦 Core Frameworks, AI Libraries & Tooling
-- **Deep Learning & Computer Vision**: PyTorch, TorchVision (`MobileNetV2`), OpenCV, Pillow (PIL), NumPy, SciPy
-- **AI & NLP Orchestration**: HuggingFace Transformers, Ollama, Sentence-Transformers, Vector RAG Retrieval
-- **Backend Framework & Server**: FastAPI (Async ASGI), Uvicorn, Pydantic v2, SQLAlchemy ORM, SQLite
-- **Frontend Stack**: React 18, Vite, TypeScript, Tailwind CSS, Lucide Icons, Axios, Web Speech API
-- **Audio & Speech Processing**: Web Audio API, MediaRecorder API, gTTS (Google Text-to-Speech), Whisper STT
-- **Microclimate & Geocoding**: Open-Meteo Weather API, BigDataCloud Reverse Geocoding, OpenStreetMap Nominatim
+### 💻 Technology Stack Matrix
+| Layer | Technologies | Description |
+| :--- | :--- | :--- |
+| **Frontend Framework** | React 18, Vite, TypeScript 5.x | High-performance, fully typed single page application |
+| **Styling & UI Components** | Tailwind CSS, Lucide React, Glassmorphism CSS | Responsive rural-themed dark palette with smooth micro-animations |
+| **Deep Learning & Vision** | PyTorch, TorchVision, MobileNetV2, PIL, OpenCV | Plant leaf pathology classifier with 38 disease categories (< 120ms) |
+| **Backend & REST API** | FastAPI (Async ASGI), Uvicorn, Pydantic v2 | High-throughput asynchronous REST gateway with auto OpenAPI docs |
+| **Database & ORM** | SQLite, SQLAlchemy 2.0 ORM | Schema migrations, relational persistence for users, jobs, SHGs, and chats |
+| **Speech & Audio** | Web Audio API, MediaRecorder API, gTTS, Whisper | Dual-channel voice recording and audio synthesis in Indian languages |
+| **Meteorology & Geolocation** | Open-Meteo API, BigDataCloud, OpenStreetMap | Satellite rain radar, precipitation probability, and reverse geocoding |
 
 ---
 
 ## 📁 Repository Directory Structure
 
 ```
-KRISHI AI /
+Gramasetu /
 ├── backend/
 │   ├── app/
-│   │   ├── ai/                      # LLM orchestrators & agricultural prompt builders
+│   │   ├── ai/                              # LLM orchestrators & prompt builders
 │   │   │   ├── agricultural_prompt.py
 │   │   │   ├── huggingface_provider.py
 │   │   │   ├── model_manager.py
 │   │   │   ├── ollama_provider.py
 │   │   │   └── provider_factory.py
-│   │   ├── api/                     # REST API Endpoints & Route Handlers
-│   │   │   ├── auth.py
-│   │   │   ├── chat.py              # Multilingual chat & leaf disease routes
+│   │   ├── api/                             # REST API Endpoints & Route Handlers
+│   │   │   ├── auth.py                      # Device/UUID farmer authentication
+│   │   │   ├── chat.py                      # Multilingual RAG chat & leaf diagnosis
+│   │   │   ├── conversation.py              # Conversation history management
+│   │   │   ├── farmers.py                   # Farmer land & soil profile
+│   │   │   ├── knowledge.py                 # Agronomic document indexing
+│   │   │   ├── simulator.py                 # KRISHI VISION Farm Future Simulator
+│   │   │   ├── translate.py                 # Multi-language translation router
+│   │   │   ├── voice.py                     # Voice transcription & audio synthesis
+│   │   │   ├── women_entrepreneurship.py    # Women SHG Hub, schemes & calculator
+│   │   │   └── work_listings.py             # Rural Work Exchange listings & requests
+│   │   ├── core/                            # Configuration & security settings
+│   │   ├── database/                        # SQLAlchemy database session & base
+│   │   ├── knowledge/                       # ICAR Agronomic guides & documents
+│   │   ├── models/                          # SQLAlchemy database entities
 │   │   │   ├── conversation.py
-│   │   │   ├── farmer.py            # Farmer profile and soil telemetry
-│   │   │   ├── knowledge.py
-│   │   │   └── simulator.py         # KRISHI VISION Farm Simulator routes
-│   │   ├── database/                # SQLAlchemy session & SQLite setup
-│   │   ├── knowledge/               # Agronomic vector documents & embeddings
-│   │   │   └── documents/crops/
-│   │   ├── models/                  # Database ORM entities
-│   │   ├── schemas/                 # Pydantic validation schemas
+│   │   │   ├── farmer.py
+│   │   │   ├── user.py
+│   │   │   ├── women_enterprise.py
+│   │   │   └── work_listing.py
+│   │   ├── schemas/                         # Pydantic validation schemas
 │   │   │   ├── chat.py
 │   │   │   ├── farmer.py
-│   │   │   └── simulator.py
-│   │   ├── services/                # Business logic & simulation engines
+│   │   │   ├── simulator.py
+│   │   │   ├── women_enterprise.py
+│   │   │   └── work_listing.py
+│   │   ├── services/                        # Business logic & simulation engines
+│   │   │   ├── auth_service.py
 │   │   │   ├── chat_service.py
-│   │   │   ├── disease_service.py   # MobileNetV2 PyTorch inference
+│   │   │   ├── disease_service.py           # MobileNetV2 PyTorch inference
 │   │   │   ├── farmer_service.py
 │   │   │   ├── language_service.py
-│   │   │   ├── simulator_service.py # Agronomic future simulation logic
-│   │   │   └── weather_service.py   # Open-Meteo API integrations
-│   │   ├── voice/                   # Speech-to-Text & Text-to-Speech handlers
-│   │   └── main.py                  # FastAPI Application Entrypoint
-│   ├── requirements.txt             # Python backend dependencies
+│   │   │   ├── simulator_service.py
+│   │   │   └── weather_service.py
+│   │   ├── voice/                           # Speech handlers & TTS synthesis
+│   │   └── main.py                          # FastAPI Application Entrypoint & Migrations
+│   ├── requirements.txt                     # Backend Python dependencies
 │   └── .env.example
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── chat/                # Chat messages, input bars, voice controllers
-│   │   │   ├── layout/              # Navigation, headers, sidebar
-│   │   │   ├── simulator/           # FarmSimulatorModal, sliders, comparison cards
-│   │   │   └── weather/             # Live weather microclimate widget
-│   │   ├── context/                 # Auth & global state context
+│   │   │   ├── chat/                        # Chat messages & voice controllers
+│   │   │   ├── layout/                      # Navbar, sidebar, header
+│   │   │   ├── onboarding/                  # Farmer land profile onboarding
+│   │   │   ├── simulator/                   # KRISHI VISION modal & sliders
+│   │   │   ├── weather/                     # Live microclimate widget
+│   │   │   ├── women/                       # Women SHG cards, schemes, calculator
+│   │   │   └── work/                        # Work listings, filters, job creation
+│   │   ├── context/                         # AuthContext & LanguageContext
 │   │   ├── pages/
-│   │   │   ├── ChatPage.tsx
-│   │   │   └── SimulatorPage.tsx    # Standalone Farm Future Simulator View
-│   │   ├── services/                # Axios API service integrations
-│   │   │   ├── chatService.ts
-│   │   │   ├── farmerService.ts
-│   │   │   └── simulatorService.ts
-│   │   ├── types/                   # TypeScript interface definitions
-│   │   ├── App.tsx
+│   │   │   ├── AutonomousFarmPage.tsx       # AI + IoT Smart Irrigation Simulation
+│   │   │   ├── ChatPage.tsx                 # Main Multilingual Advisory Chat
+│   │   │   ├── ConversationsPage.tsx        # Saved chats history
+│   │   │   ├── ProfilePage.tsx              # Farmer land & soil profile editor
+│   │   │   ├── SimulatorPage.tsx            # Standalone KRISHI VISION view
+│   │   │   ├── WomenEntrepreneurshipPage.tsx# Women SHG Hub & Marketplace
+│   │   │   ├── WorkNeedPage.tsx             # Rural Work Seeker Portal
+│   │   │   └── WorkProviderPage.tsx         # Rural Work Provider Portal
+│   │   ├── services/                        # Frontend Axios API client integrations
+│   │   ├── types/                           # TypeScript interfaces & types
+│   │   ├── App.tsx                          # App routing & main entry
 │   │   └── main.tsx
 │   ├── package.json
 │   ├── tailwind.config.js
 │   └── vite.config.ts
-├── models/                          # Pretrained MobileNetV2 vision weights
-│   └── plant_disease_model.pth
-├── screenshots/                     # UI and Simulator demonstration images
+├── models/                                  # Pretrained AI model weights
+├── screenshots/                             # Complete project demonstration images
 └── README.md
 ```
 
 ---
 
-## 📡 REST API Documentation
+## 📡 Complete REST API Documentation
 
-### 1. Farm Future Simulation Endpoints
-- **`POST /api/simulator/simulate`**
-  - *Description*: Computes multi-crop financial, agronomic, and risk forecasts based on interactive scenario parameters.
-  - *Payload*:
-    ```json
-    {
-      "water_availability_pct": 80.0,
-      "rain_delay_days": 0,
-      "temp_delta_c": 0.0,
-      "market_price_delta_pct": 0.0,
-      "expected_rainfall": "Normal",
-      "budget": 60000.0,
-      "farm_size_acres": 2.0,
-      "soil_type": "Black Soil",
-      "selected_crops": ["Rice", "Groundnut", "Millet"],
-      "language": "te"
-    }
-    ```
-- **`POST /api/simulator/ai-insight`**
-  - *Description*: Generates deep agronomic tactical advisory using agricultural LLMs.
-- **`GET /api/simulator/crops`**
-  - *Description*: Returns the catalog of supported regional crops, base yields, water requirements, and MSP benchmarks.
+### 1. KRISHI VISION Farm Future Simulator
+- **`POST /api/simulator/simulate`**: Executes multi-crop scenario calculations across weather, market price, and water stress variations.
+- **`POST /api/simulator/ai-insight`**: Generates agronomic strategic guidance based on simulation parameters.
+- **`GET /api/simulator/crops`**: Fetches catalog of supported crops, baseline yields, MSP prices, and water requirements.
 
-### 2. Conversational & Vision Endpoints
-- **`POST /api/chat/message`**: Multi-turn agricultural chat with RAG and optional leaf image upload.
-- **`POST /api/chat/detect-disease`**: Direct leaf pathology diagnosis returning disease name, confidence, and treatment.
-- **`POST /api/voice/transcribe`**: Audio transcription (STT) for incoming farmer voice notes.
-- **`POST /api/voice/synthesize`**: Generates spoken audio stream (TTS) for responses in Indian languages.
+### 2. Conversational Advisory & Plant Vision
+- **`POST /api/chat/message`**: Multi-turn agricultural chat with vector RAG grounding and optional leaf photo.
+- **`POST /api/chat/detect-disease`**: MobileNetV2 leaf disease detection returning disease name, confidence, causes, and cures.
+- **`POST /api/voice/transcribe`**: Converts incoming farmer voice recordings (STT) into text.
+- **`POST /api/voice/synthesize`**: Synthesizes spoken audio stream (TTS) in Telugu, Hindi, or English.
 
-### 3. Profile & Microclimate Endpoints
-- **`GET /api/farmer/profile`**: Fetches registered farmer details, location coordinates, soil type, and primary crop.
-- **`PUT /api/farmer/profile`**: Updates agricultural parameters for hyper-personalized recommendations.
-- **`GET /api/health`**: Health status check for backend microservices and neural vision models.
+### 3. Gramasetu Rural Work Exchange
+- **`GET /api/work-listings`**: Searches work listings with filters (`category`, `location`, `work_type`, `urgency`, `search`).
+- **`POST /api/work-listings`**: Creates a new farm work requirement or agricultural service posting.
+- **`GET /api/work-listings/my`**: Retrieves work listings posted by the current user.
+- **`GET /api/work-listings/{id}`**: Returns full listing details.
+- **`PUT /api/work-listings/{id}`**: Updates listing information or marks as completed.
+- **`DELETE /api/work-listings/{id}`**: Removes a work listing.
+- **`POST /api/work-listings/{id}/request`**: Submits a worker application/request for a listing.
+- **`GET /api/work-listings/{id}/requests`**: Fetches all applications for a specific listing.
+- **`PATCH /api/work-listings/requests/{request_id}/status`**: Updates applicant status (`pending`, `accepted`, `rejected`).
+
+### 4. Gramasetu Women Entrepreneurship & SHG Hub
+- **`GET /api/women-entrepreneurship`**: Lists active women enterprises and SHGs with filters (`category`, `district`, `search`).
+- **`POST /api/women-entrepreneurship`**: Registers a new women-led rural micro-enterprise or SHG product line.
+- **`GET /api/women-entrepreneurship/schemes`**: Returns catalog of central & state government schemes (Namo Drone Didi, PM-FME, DAY-NRLM, DWCRA, Mudra).
+- **`POST /api/women-entrepreneurship/viability-calculator`**: Computes financial feasibility (revenue, OPEX, net profit, margin %, break-even months).
+- **`GET /api/women-entrepreneurship/success-stories`**: Inspirational case studies of rural women entrepreneurs.
+- **`GET /api/women-entrepreneurship/my`**: Returns enterprises registered by the current user.
+- **`GET /api/women-entrepreneurship/{id}`**: Single enterprise details and product offerings.
+- **`PUT /api/women-entrepreneurship/{id}`**: Updates enterprise information.
+- **`DELETE /api/women-entrepreneurship/{id}`**: Deletes an enterprise.
+- **`POST /api/women-entrepreneurship/{id}/inquiries`**: Submits a purchase order or bulk distribution inquiry.
+- **`GET /api/women-entrepreneurship/{id}/inquiries`**: Fetches all buyer inquiries for an enterprise.
+
+### 5. Farmer Profile & Soil Telemetry
+- **`GET /api/farmer/profile`**: Returns current farmer profile, coordinates, soil type, and primary crop.
+- **`PUT /api/farmer/profile`**: Updates agricultural parameters for personalized advisory.
+- **`POST /api/auth/device-login`**: Passwordless device-UUID onboarding for smallholder farmers.
+- **`GET /api/health`**: Health status check for backend services, neural models, and database.
 
 ---
 
 ## 🚀 Quick Start & Installation Guide
 
 ### Prerequisites
-- **Python**: Version `3.11` or higher
-- **Node.js**: Version `18.0` or higher (`npm` installed)
+- **Python**: Version `3.10` or higher
+- **Node.js**: Version `18.0` or higher (`npm` included)
 - **Git**
 
 ---
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/vankanagarakesh-lab/Multilingual-AI-Farmer-Advisory-Assistant.git
-cd Multilingual-AI-Farmer-Advisory-Assistant
+git clone https://github.com/Nandini090205/Gramasetu.git
+cd Gramasetu
 ```
 
 ---
@@ -561,7 +570,7 @@ cd Multilingual-AI-Farmer-Advisory-Assistant
 ```bash
 cd backend
 
-# Create and activate virtual environment
+# Create and activate Python virtual environment
 python -m venv venv
 
 # Windows (PowerShell)
@@ -575,7 +584,7 @@ pip install -r requirements.txt
 # Start the FastAPI server
 uvicorn app.main:app --reload --port 8000
 ```
-> Interactive API Swagger Documentation will be accessible at: **`http://localhost:8000/docs`**
+> Interactive API Swagger Documentation is live at: **`http://localhost:8000/docs`**
 
 ---
 
@@ -594,25 +603,30 @@ npm run dev
 
 ---
 
-## 🔮 Future Roadmap & Scalability
+## ⚙️ Future Hardware Integration Blueprint
 
-1. **🛰️ Satellite Remote Sensing (NDVI Telemetry)**: Integrating Sentinel-2 / Landsat optical satellite imagery for automated crop health indices and canopy moisture analysis.
-2. **📈 Live Mandi API Integration**: Direct synchronization with AGMARKNET commodity price feeds for real-time market rate forecasting.
-3. **📶 Offline Edge Deployment (PWA / Android APK)**: Quantized ONNX / TFLite MobileNetV2 runtime operating completely offline in rural fields with zero internet connectivity.
-4. **🧪 Soil Sensor IoT Integration**: Bluetooth & LoRaWAN connectivity to smart soil N-P-K and moisture probes.
+```
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                  HARDWARE INTEGRATION ARCHITECTURE                                    │
+├─────────────────────────┬─────────────────────────┬─────────────────────────┬─────────────────────────┤
+│ 1. Capacitive Probe     │ 2. ESP32 Controller     │ 3. 5V Relay Switch      │ 4. Submersible Pump     │
+│ • Industrial RS485      │ • Tensilica 240MHz      │ • 10A Optocoupler       │ • 1.5 HP - 5 HP 3-Phase │
+│ • 15cm Root Placement   │ • LoRaWAN 868/915 MHz   │ • Flyback Diode Safety  │ • Flow: 42-200 L/min    │
+│ • Analog 0-3.3V GPIO34  │ • MQTT over TLS 1.3     │ • Signal GPIO26 Out     │ • Drip & Sprinkler Grid │
+└─────────────────────────┴─────────────────────────┴─────────────────────────┴─────────────────────────┘
+```
 
 ---
 
 ## 👥 Authors & Collaborators
 
-| Contributor | GitHub Profile | Role |
-| :--- | :--- | :--- |
-| **Naga Rakesh** | [@vankanagarakesh-lab](https://github.com/vankanagarakesh-lab) | Lead Developer & AI/ML Architecture |
-| **Omkar** | [@omkar136](https://github.com/omkar136) | Collaborator & Developer |
+- **Nandini** — Project Lead & Ecosystem Developer ([@Nandini090205](https://github.com/Nandini090205))
+- **Naga Rakesh** — AI/ML Architecture & Platform Engineering ([@vankanagarakesh-lab](https://github.com/vankanagarakesh-lab))
+- **Omkar** — Collaborator & Full-Stack Development ([@omkar136](https://github.com/omkar136))
 
-- **Project Repository**: [Multilingual-AI-Farmer-Advisory-Assistant](https://github.com/vankanagarakesh-lab/Multilingual-AI-Farmer-Advisory-Assistant)
+- **Project Repository**: [https://github.com/Nandini090205/Gramasetu](https://github.com/Nandini090205/Gramasetu)
 - **License**: Released under the [MIT License](LICENSE).
 
 <div align="center">
-🌾 <b>KRISHI AI</b> — <i>"Don't just grow. Simulate your future before you invest."</i>
+🌾 <b>GRAMASETU (గ్రామసేతు)</b> — <i>"Bridging Villages with Intelligence, Opportunity, and Prosperity."</i>
 </div>

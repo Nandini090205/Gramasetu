@@ -114,6 +114,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Record<string, string>> = {
     
     // Intelligent Autonomous Farm
     'sidebar.auto_farm': 'Intelligent Autonomous Farm',
+    'sidebar.women_enterprise': 'Women Entrepreneurship',
     'sidebar.future_badge': 'FUTURE AI',
     'auto_farm.title': 'Intelligent Autonomous Farm',
     'auto_farm.subtitle': 'AI + IoT Powered Smart Irrigation System',

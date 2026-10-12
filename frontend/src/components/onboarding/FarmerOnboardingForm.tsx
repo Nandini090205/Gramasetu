@@ -14,7 +14,6 @@ import {
   ShieldCheck
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
-
 import { useLanguage, normalizeLanguageCode } from '../../context/LanguageContext';
 
 export const FarmerOnboardingForm: React.FC = () => {
@@ -30,6 +29,16 @@ export const FarmerOnboardingForm: React.FC = () => {
   const [preferredLanguage, setPreferredLanguage] = useState('Telugu');
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Ensure unique device UUID exists for Work Provider / Work Need operations
+  React.useEffect(() => {
+    if (!localStorage.getItem('krishi_farmer_uuid')) {
+      const newUuid = typeof crypto !== 'undefined' && crypto.randomUUID
+        ? crypto.randomUUID()
+        : 'farmer-' + Math.random().toString(36).substring(2, 15);
+      localStorage.setItem('krishi_farmer_uuid', newUuid);
+    }
+  }, []);
 
   const handleLanguageChange = (lang: string) => {
     setPreferredLanguage(lang);
@@ -58,6 +67,9 @@ export const FarmerOnboardingForm: React.FC = () => {
       });
       const code = normalizeLanguageCode(preferredLanguage);
       setLanguage(code, true);
+
+      // Save user role and navigate to the main chat interface
+      localStorage.setItem('krishi_user_role', 'advisory');
       navigate('/', { replace: true });
     } catch (err: any) {
       console.error('Onboarding submission failed:', err);
@@ -213,7 +225,7 @@ export const FarmerOnboardingForm: React.FC = () => {
                 <option value="Hindi">हिंदी (Hindi)</option>
                 <option value="Tamil">தமிழ் (Tamil)</option>
                 <option value="Kannada">ಕನ್ನಡ (Kannada)</option>
-                <option value="Marathi">मराठी (Marathi)</option>
+                <option value="Marathi">మరాठी (Marathi)</option>
               </select>
             </div>
 

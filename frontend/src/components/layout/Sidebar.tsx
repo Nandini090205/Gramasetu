@@ -11,7 +11,10 @@ import {
   Sparkles,
   Trash2,
   AlertTriangle,
-  Loader2
+  Loader2,
+  Briefcase,
+  Users,
+  HeartHandshake
 } from 'lucide-react';
 import { Conversation } from '../../types';
 import { useAuth } from '../../context/AuthContext';
@@ -42,6 +45,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const { t, currentLanguage, translateBatch } = useLanguage();
   const [deletingId, setDeletingId] = useState<number | null>(null);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
   const [translatedTitles, setTranslatedTitles] = useState<Record<number, string>>({});
 
   const isProfileActive = location.pathname === '/profile';
@@ -179,6 +183,69 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 {t('sidebar.future_badge', 'FUTURE AI')}
               </span>
             </button>
+
+            {/* Women Entrepreneurship Hub Link */}
+            <button
+              onClick={() => {
+                navigate('/women-entrepreneurship');
+                onClose();
+              }}
+              className={`w-full py-2.5 px-3 rounded-xl flex items-center justify-between text-xs font-bold transition border group ${
+                location.pathname === '/women-entrepreneurship'
+                  ? 'bg-gradient-to-r from-rose-950/70 via-purple-900/40 to-pink-950/50 text-rose-200 border-rose-500/50 shadow-lg shadow-rose-950/50 ring-1 ring-rose-500/30'
+                  : 'bg-slate-950/70 hover:bg-slate-800/80 text-slate-300 hover:text-rose-300 border-slate-800'
+              }`}
+            >
+              <div className="flex items-center space-x-2 min-w-0">
+                <span className="text-base group-hover:scale-110 transition-transform">👩‍🌾</span>
+                <span className="truncate">{t('sidebar.women_enterprise', 'Women Entrepreneurship')}</span>
+              </div>
+              <span className="text-[9px] uppercase px-1.5 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30 font-black shrink-0 tracking-wider">
+                LAKHPATI DIDI
+              </span>
+            </button>
+
+            {/* Work Need Link */}
+            <button
+              onClick={() => {
+                navigate('/work-need');
+                onClose();
+              }}
+              className={`w-full py-2 px-3 rounded-xl flex items-center justify-between text-xs font-semibold transition border ${
+                location.pathname === '/work-need'
+                  ? 'bg-gradient-to-r from-emerald-600/30 to-teal-500/20 text-emerald-300 border-emerald-500/40 shadow-inner'
+                  : 'bg-slate-950/70 hover:bg-slate-800/80 text-slate-300 hover:text-emerald-400 border-slate-800'
+              }`}
+            >
+              <div className="flex items-center space-x-2">
+                <Briefcase className="w-3.5 h-3.5 text-emerald-400" />
+                <span>Work Need / పని కావాలి</span>
+              </div>
+              <span className="text-[9px] uppercase px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-bold">
+                SEEKER
+              </span>
+            </button>
+
+            {/* Work Provider Link */}
+            <button
+              onClick={() => {
+                navigate('/work-provider');
+                onClose();
+              }}
+              className={`w-full py-2 px-3 rounded-xl flex items-center justify-between text-xs font-semibold transition border ${
+                location.pathname === '/work-provider'
+                  ? 'bg-gradient-to-r from-emerald-600/30 to-teal-500/20 text-emerald-300 border-emerald-500/40 shadow-inner'
+                  : 'bg-slate-950/70 hover:bg-slate-800/80 text-slate-300 hover:text-emerald-400 border-slate-800'
+              }`}
+            >
+              <div className="flex items-center space-x-2">
+                <Users className="w-3.5 h-3.5 text-emerald-400" />
+                <span>Work Provider / పని ఇచ్చేవారు</span>
+              </div>
+              <span className="text-[9px] uppercase px-1.5 py-0.5 rounded bg-teal-500/10 text-teal-400 font-bold">
+                HIRE
+              </span>
+            </button>
           </div>
         </div>
 
@@ -284,34 +351,88 @@ export const Sidebar: React.FC<SidebarProps> = ({
         )}
 
         {/* Bottom User & Profile Panel */}
-        <div className="p-3 border-t border-slate-800/80 bg-slate-900/50 space-y-1">
+        <div className="p-3 border-t border-slate-800/80 bg-slate-900/50 space-y-2">
           {/* Farmer Profile Link */}
-          <button
-            onClick={() => {
-              navigate('/profile');
-              onClose();
-            }}
-            className={`
-              w-full text-left px-3 py-2.5 rounded-xl text-sm transition flex items-center justify-between group
-              ${isProfileActive 
-                ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-medium' 
-                : 'text-slate-300 hover:bg-slate-800/60 hover:text-slate-100'}
-            `}
-          >
-            <div className="flex items-center space-x-3 min-w-0">
-              <div className="w-8 h-8 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center text-emerald-400 shrink-0">
-                <UserIcon className="w-4 h-4" />
+          <div className="flex items-center gap-1.5">
+            <button
+              onClick={() => {
+                navigate('/profile');
+                onClose();
+              }}
+              className={`
+                flex-1 text-left px-3 py-2 rounded-xl text-sm transition flex items-center justify-between group min-w-0
+                ${isProfileActive 
+                  ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-medium' 
+                  : 'text-slate-300 hover:bg-slate-800/60 hover:text-slate-100'}
+              `}
+            >
+              <div className="flex items-center space-x-2.5 min-w-0">
+                <div className="w-8 h-8 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center text-emerald-400 shrink-0">
+                  <UserIcon className="w-4 h-4" />
+                </div>
+                <div className="truncate">
+                  <p className="text-xs font-semibold text-slate-200 truncate">{user?.name || t('sidebar.profile', 'Farmer Profile')}</p>
+                  <p className="text-[10px] text-emerald-400/80 truncate">
+                    {farmerProfile?.primary_crop ? `${farmerProfile.primary_crop} • ${farmerProfile?.farm_size || 'Farm'}` : t('sidebar.profile', 'View & Edit Profile')}
+                  </p>
+                </div>
               </div>
-              <div className="truncate">
-                <p className="text-xs font-semibold text-slate-200 truncate">{user?.name || t('sidebar.profile', 'Farmer Profile')}</p>
-                <p className="text-[11px] text-emerald-400/80 truncate">
-                  {farmerProfile?.primary_crop ? `${farmerProfile.primary_crop} • ${farmerProfile?.farm_size || 'Farm'}` : t('sidebar.profile', 'View & Edit Profile')}
-                </p>
+              <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-slate-300 shrink-0" />
+            </button>
+
+            {/* Quick Logout Button */}
+            <button
+              onClick={() => setShowLogoutConfirm(true)}
+              title={t('auth.logout', 'Logout & Register New Farmer')}
+              className="p-2.5 rounded-xl text-slate-400 hover:text-rose-400 hover:bg-rose-500/10 border border-transparent hover:border-rose-500/20 transition shrink-0"
+            >
+              <LogOut className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+
+        {/* Logout Confirmation Modal */}
+        {showLogoutConfirm && (
+          <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 max-w-sm w-full shadow-2xl space-y-4 animate-in fade-in zoom-in-95 duration-150">
+              <div className="flex items-center space-x-3 text-rose-400">
+                <div className="p-2 rounded-xl bg-rose-500/10 border border-rose-500/20">
+                  <LogOut className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-white text-sm">{t('auth.logout_confirm_title', 'Logout & Switch Farmer?')}</h3>
+                  <p className="text-xs text-slate-400">{t('auth.logout_confirm_sub', 'లాగౌట్ చేసి కొత్త రైతుగా నమోదు కావాలా?')}</p>
+                </div>
+              </div>
+
+              <p className="text-xs text-slate-300 bg-slate-800/60 p-3 rounded-xl border border-slate-700/50 leading-relaxed">
+                {t('auth.logout_warning', 'Logging out will clear this device session and show the registration form for a new farmer.')}
+              </p>
+
+              <div className="flex items-center justify-end space-x-2 pt-2">
+                <button
+                  type="button"
+                  onClick={() => setShowLogoutConfirm(false)}
+                  className="px-3.5 py-1.5 rounded-xl text-xs font-medium text-slate-300 hover:bg-slate-800 transition"
+                >
+                  {t('common.cancel', 'Cancel')}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowLogoutConfirm(false);
+                    logout();
+                    navigate('/', { replace: true });
+                  }}
+                  className="px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-rose-600 hover:bg-rose-500 text-white transition flex items-center space-x-1.5 shadow-lg shadow-rose-900/30"
+                >
+                  <LogOut className="w-3.5 h-3.5" />
+                  <span>{t('auth.logout', 'Logout')}</span>
+                </button>
               </div>
             </div>
-            <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-slate-300 shrink-0" />
-          </button>
-        </div>
+          </div>
+        )}
       </aside>
     </>
   );
