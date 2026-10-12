@@ -622,7 +622,7 @@ npm run dev
 
 - **Nandini** — Project Lead & Ecosystem Developer ([@Nandini090205](https://github.com/Nandini090205))
   
-
+ **Nandini** — Team Member ([@Nagasudha2006](https://github.com/Nagasudha2006))
 
 - **Project Repository**: [https://github.com/Nandini090205/Gramasetu](https://github.com/Nandini090205/Gramasetu)
 - **License**: Released under the [MIT License](LICENSE).
